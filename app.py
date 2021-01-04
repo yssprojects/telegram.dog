@@ -18,7 +18,7 @@ def id():
     #description = soup.find("div",class_="tgme_page_description").text
     channel_name = soup.find("div", class_="tgme_page_title").text.replace("\n","")
     User = soup.find("div", class_="tgme_page_extra").text
-    return render_template("main.html",dp=dp,channel_name=channel_name,User=User)
+    return render_template("main.html",dp=dp,channel_name=channel_name,User=User,w=w)
 
 
 if __name__ == "__main__":
